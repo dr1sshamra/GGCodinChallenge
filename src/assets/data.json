@@ -1,0 +1,29 @@
+{
+    "questions": [
+        {
+            "id": "1",
+            "question": "Who am i ?",
+            "response": "im driss !"
+        },
+        {
+            "id": "2",
+            "question": "how old am i ?",
+            "response": "im 24yo !"
+        },
+        {
+            "id": "3",
+            "question": "Where u live ?",
+            "response": "Morocco!"
+        },
+        {
+            "id": "4",
+            "question": "What do u do?",
+            "response": "Workin Aas a developer !"
+        },
+        {
+            "id": "5",
+            "question": "You want more ?",
+            "response": "Call me !"
+        }
+    ]
+}
