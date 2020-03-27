@@ -2,25 +2,30 @@
     {
         "id": "1",
         "question": "Who am i ?",
-        "reponse": "im driss !"
+        "reponse": "im Driss HAMRA ! 24yo, i live in casablanca. \n i got my baccalaureate in 2013, then i joined the university of Economy and Management and got my university degree. But it wasn't really what i want to do. being a banker or an accountant. it's not really my thing. So i started learning programming language. and joind an Institut of computer science (ISGI Casablanca). "
     },
     {
         "id": "2",
-        "question": "how old am i ?",
-        "reponse": "im 24yo !"
+        "question": "What about your professional experience ?",
+        "reponse": "my first professionel experience is a traineeship at Oumdin Technology. where i worked on an interesting project. using recent technology as .NET Core web API, Angular 7 and Xamarin. and im currently a .NET Developer at Accenture Technology since june 2019."
     },
     {
         "id": "3",
-        "question": "Where u live ?",
-        "reponse": "Morocco!"
+        "question": "what do you do at Accenture ?",
+        "reponse": "im working on an insurance project as a .NET Developer. it's a big project with a big team we're nearly 40 person, i learned a lot of things as using TFS, PL/SQL and more... the project contains lot of application as ASP.NET Web forms application, web services, desktop applications and lot lot lot of scripts (ORACLE)"
     },
     {
         "id": "4",
-        "question": "What do u do?",
-        "reponse": "Workin Aas a developer !"
+        "question": "Why do you want to leave Accenture ?",
+        "reponse": "i've been at Accenture since june 2019, and i think it's time to take a new adventure. learn another things and meet new poeple !"
     },
     {
         "id": "5",
+        "question": "What is the technologies that you use ?",
+        "reponse": "i can say that im a Microsoft FAN ! ^^, i worked with all platforms. Desktop (Windows forms, UWP), Web (ASP.NET Web forms & MVC), Mobile with Xamarin, also worked with .NET CORE and web services (Rest/soap), i use Angular as well since it version 7. but i believe that it doesn't matter what technology you use, since you know the concept it's OK ! so i'm open to learn other technologies !"
+    },
+    {
+        "id": "6",
         "question": "You want more ?",
         "reponse": "Call me ! +212606444377"
     }
