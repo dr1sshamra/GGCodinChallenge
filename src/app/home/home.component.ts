@@ -11,6 +11,9 @@ import { QuestionService } from '../services/question.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  questionsCount : number
+  questionRemaining : number 
+
   optionsClosed: AnimationOptions = {
     path: '../../assets/lottie/closed-gift.json',
   };
@@ -31,20 +34,28 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.questionService.getQuestions().subscribe(res => {
+      this.questionsCount = res.length
+      this.questionRemaining = this.questionsCount - this.questionService.questionAnswered.length
+    },
+      errors => {
+        console.log('Oups ! something is wrong. [' + errors + ']')
+      })
   }
+  
 
   closedClicked() {
     this.toggleBoxes(false)
   }
 
   openedComplete() {
-
-    if (this.questionService.isAllAnswered()) {
-      this.navigate(['reponse', 5])
+    
+    if (this.questionService.isAllAnswered(this.questionsCount)) {
+      this.navigate(['reponse', this.questionsCount ])
     } else {
-      let randomQuestion = Math.floor(Math.random() * 4) + 1
-      while(this.AlreadyAnswered(randomQuestion)){
-        randomQuestion = Math.floor(Math.random() * 4) + 1
+      let randomQuestion = Math.floor(Math.random() * this.questionsCount -1 ) + 1
+      while(this.AlreadyAnswered(randomQuestion) || randomQuestion === 0){
+        randomQuestion = Math.floor(Math.random() * this.questionsCount -1 ) + 1
       }
       this.questionService.AddToAnsweredQuestions(randomQuestion)
       this.navigate(['reponse', randomQuestion])

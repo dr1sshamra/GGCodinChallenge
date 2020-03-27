@@ -26,9 +26,9 @@ export class QuestionService {
     this.questionAnsweredSubject.next(this.questionAnswered)
   }
 
-  isAllAnswered() : boolean{
+  isAllAnswered(questionsCount:number) : boolean{
     console.log(this.questionAnswered.length)
-    if (this.questionAnswered?.length === 4){
+    if (this.questionAnswered?.length === questionsCount -1){
       return true
     }
     return false

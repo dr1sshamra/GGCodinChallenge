@@ -3,7 +3,7 @@
         <div class="row">
             <div class="offset-md-3 col-md-6">
                 <span>
-                    <h1>Questions Box !</h1>
+                    <h1>Questions Box ! Click on the box :)</h1><b>[Question remaining : {{ questionRemaining }}]</b>
                     <ng-lottie *ngIf="closedVisibility" [options]="optionsClosed"  (click)="closedClicked()"></ng-lottie>
                     <ng-lottie *ngIf="openedVisibility" [options]="optionsOpened"  (complete)="openedComplete()"></ng-lottie>
                 </span>
