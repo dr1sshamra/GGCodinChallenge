@@ -1,1 +1,13 @@
-<p>home works!</p>
+<div class="container">
+    <div style="width:100%;height:100%;min-height:800px" class="border">
+        <div class="row">
+            <div class="offset-md-3 col-md-6">
+                <span>
+                    <h1>Questions Box !</h1>
+                    <ng-lottie *ngIf="closedVisibility" [options]="optionsClosed"  (click)="closedClicked()"></ng-lottie>
+                    <ng-lottie *ngIf="openedVisibility" [options]="optionsOpened"  (complete)="openedComplete()"></ng-lottie>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

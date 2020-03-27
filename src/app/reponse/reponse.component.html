@@ -1,1 +1,13 @@
-<p>reponse works!</p>
+<div class="container">
+    <button class="btn btn-danger" routerLink="/home">Back to home</button>
+
+    <div class="row">
+        <h1>Question {{ question?.id }} : {{ question?.question }}</h1>
+
+    </div>
+    <div class="row">
+        <p>
+            <b>Réponse :</b> {{ question?.reponse }}
+        </p>
+    </div>
+</div>
