@@ -2,7 +2,7 @@
 
   - This project is a brief/funny presentation of my profil, my studies and my experiences.</br>
   - The project is developed with : Angular 9
-  - The app is deployed ! give it a try : www.dr1sshamra.azurewebsites.net
+  - The app is deployed ! give it a try : https://dr1sshamra.azurewebsites.net
 
 ## Getting Started
 
