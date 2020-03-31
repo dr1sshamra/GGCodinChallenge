@@ -1,10 +1,10 @@
 <div class="container">
     <div class="card text-center">
         <div class="card-header">
-            Question {{ question?.id }} : {{ question?.question }}
+            Question : {{ question?.id }}
         </div>
         <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
+          <h5 class="card-title">{{ question?.question }}</h5>
           <p class="card-text"><b>Response :</b> {{ question?.reponse }}</p>
           <button class="btn btn-danger" routerLink="/home">Back to home</button>
         </div>
