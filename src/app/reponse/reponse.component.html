@@ -1,13 +1,14 @@
 <div class="container">
-    <button class="btn btn-danger" routerLink="/home">Back to home</button>
-
-    <div class="row">
-        <h1>Question {{ question?.id }} : {{ question?.question }}</h1>
-
-    </div>
-    <div class="row">
-        <p>
-            <b>Réponse :</b> {{ question?.reponse }}
-        </p>
-    </div>
+    <div class="card text-center">
+        <div class="card-header">
+            Question {{ question?.id }} : {{ question?.question }}
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text"><b>Response :</b> {{ question?.reponse }}</p>
+          <button class="btn btn-danger" routerLink="/home">Back to home</button>
+        </div>
+        <div class="card-footer text-muted">
+        </div>
+      </div>
 </div>
