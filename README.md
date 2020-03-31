@@ -3,6 +3,12 @@
   - This project is a brief/funny presentation of my profil, my studies and my experiences.</br>
   - The project is developed with : Angular 9
 
+### Prerequisites
+
+- nodejs
+- Angular CLI 9
+- code editor ( visual studio code )
+
 ## Getting Started
 
  1. Go to project folder and install dependencies:</br></br>
@@ -34,11 +40,6 @@
     |- main.ts                        app entry point</br>
     |- polyfills.ts                   polyfills needed by Angular</br>
     
-### Prerequisites
-
-- nodejs
-- Angular CLI 9
-- code editor ( visual studio code )
 
 ## Authors
 
