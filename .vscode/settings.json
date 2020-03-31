@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/c0b30f84-ef69-4c0d-804f-216ab768fa76/resourceGroups/GGCodinChallenge/providers/Microsoft.Web/sites/dr1sshamra",
+    "appService.deploySubpath": "dist\\GGcodinChallenge"
+}
