@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import {HttpClientModule} from '@angular/common/http'
 import { ReponseComponent } from './reponse/reponse.component';
 import { LottieModule } from 'ngx-lottie';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
  
 export function playerFactory() {
   return import('lottie-web');
@@ -16,7 +17,8 @@ export function playerFactory() {
   declarations: [
     AppComponent,
     HomeComponent,
-    ReponseComponent
+    ReponseComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
