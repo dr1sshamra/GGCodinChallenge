@@ -4,8 +4,13 @@
             Question : {{ question?.id }}
         </div>
         <div class="card-body">
-          <h5 class="card-title">{{ question?.question }}</h5>
-          <p class="card-text"><b>Response :</b> {{ question?.reponse }}</p>
+          <div *ngIf = "!noAnswer">
+            <h5 class="card-title">{{ question?.question }}</h5>
+            <p class="card-text"><b>Response :</b> {{ question?.reponse }}</p>
+          </div>
+          <div *ngIf = "noAnswer">
+            <h2>No answer yet to this question :(</h2>
+          </div>
           <button class="btn btn-danger" routerLink="/home">Back to home</button>
         </div>
         <div class="card-footer text-muted">

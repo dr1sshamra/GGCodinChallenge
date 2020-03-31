@@ -9,6 +9,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./reponse.component.scss']
 })
 export class ReponseComponent implements OnInit {
+  noAnswer:boolean = false
   question: Question
   constructor(private questionService: QuestionService,
     private activatedRoute: ActivatedRoute) { }
@@ -21,6 +22,11 @@ export class ReponseComponent implements OnInit {
   getAnswer(id: number) {
     this.questionService.getQuestions().subscribe(res => {
       this.question = res.find(q => q.id == +id)
+      if (this.question == null){
+        this.noAnswer = true
+      }else{
+        this.noAnswer = false
+      }
     },
       errors => {
         console.log('Oups ! something is wrong. [' + errors + ']')
